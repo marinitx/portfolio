@@ -13,7 +13,25 @@ body {
     margin: 0;
     padding: 0;
     text-transform: uppercase;
-    height: 4032px;
+}
+
+h1 {
+    font-size: 1.3rem; /* Ajusta el tamaño según tus necesidades */
+    color: #E2E2E2
+}
+
+h2 {
+    font-size: 1.2rem; /* Ajusta el tamaño según tus necesidades */
+    color: #E2E2E2
+}
+
+h3 {
+    font-size: 0.75rem; /* Ajusta el tamaño según tus necesidades */
+    color: #E2E2E2
+}
+
+p {
+    color: #E2E2E2;
 }
 
 header {
@@ -51,12 +69,6 @@ nav ul li a:hover {
     margin: 0 auto; /* Centra el hero horizontalmente */
 }
 
-#hero h1 {
-    font-size: 1.3em;
-    margin: 0;
-    color: #E2E2E2;
-}
-
 .hero-subtitle {
     margin: 20px 0;
     color: #E2E2E2;
@@ -87,7 +99,6 @@ a:hover {
 
 #projects h2 {
     text-align: center;
-    font-size: 1.5em;
     margin-bottom: 38px;
     color: #E2E2E2;
 }
@@ -219,12 +230,6 @@ a:hover {
     position: relative;
 }
 
-.skill h2 {
-    margin-top: 0;
-    font-size: 1.5rem;
-    color: #E2E2E2;
-}
-
 .skill ul {
     list-style-type: none;
     padding: 0;
@@ -245,6 +250,34 @@ a:hover {
     white-space: nowrap;
     overflow: hidden;
     backdrop-filter: blur(5px);
+}
+
+/* WORK AND EDUCATION */
+
+.workstudycontainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 0 auto;
+    width: 100%;
+    align-items: center;
+}
+
+.workstudy {
+    flex: 1;
+    padding: 20px;
+    position: relative;
+}
+
+.workstudy li h2 {
+    font-size: 1.12em;
+    margin-bottom: 4px;
+}
+
+.workstudy p {
+    color: #E2E2E2;
+    mix-blend-mode: soft-light;
+    margin-top: 0;
 }
 
 /* ANIMACIONES */
