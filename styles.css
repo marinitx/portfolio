@@ -1,0 +1,179 @@
+@font-face {
+    font-family: 'Retro Gaming';
+    src: url('fonts/retro_gaming.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Retro Gaming', cursive;
+    background: linear-gradient(#5F95A0, #22363A);
+    /* Fallback para navegadores que no soportan gradientes */
+    background: -webkit-linear-gradient(#5F95A0, #22363A);
+    /* Asegura que el degradado cubra toda la pantalla */
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    height: 4032px;
+}
+
+header {
+    color: #E2E2E2;
+    padding: 1.9em 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    font-size: 0.8em;
+}
+
+nav ul li {
+    margin: 0 40px;
+}
+
+nav ul li a {
+    color: #E2E2E2;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #08242A;
+}
+
+#hero {
+    padding: 100px 20px;
+    text-align: left;
+    width: 80%; /* Ancho del hero, ocupa la mitad de la pantalla */
+    margin: 0 auto; /* Centra el hero horizontalmente */
+}
+
+#hero h1 {
+    font-size: 1.3em;
+    margin: 0;
+    color: #E2E2E2;
+}
+
+.hero-subtitle {
+    margin: 20px 0;
+    color: #E2E2E2;
+}
+
+.hero-subtitle p {
+    margin: 0;
+    font-size: 1.3em;
+}
+
+.hero-description {
+    font-size: 1em;
+    color: #FFF;
+    mix-blend-mode: soft-light;
+}
+
+/* PROYECTOS */
+
+#projects h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 38px;
+    color: #E2E2E2;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 26px; /* Espacio entre proyectos */
+    max-width: 800px; /* Ancho máximo del contenedor */
+    max-height: fit-content;
+    margin: 0 auto;
+}
+
+.proyecto {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.170); /* Fondo con transparencia */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    overflow: hidden; /* Para recortar la sombra en los bordes redondeados */
+    height: 210px;
+    backdrop-filter: blur(5px);
+}
+
+.proyecto img {
+    width: 150px; /* Ancho de la imagen */
+    height: 150px; /* Altura de la imagen */
+    object-fit: cover; /* Ajustar imagen al contenedor */
+    border-radius: 10px 0 0 10px; /* Bordes redondeados solo en la esquina izquierda */
+}
+
+.descripcion h3 {
+    padding-left: 30%;
+    width: 100%;
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: #E2E2E2;
+}
+
+.descripcion p {
+    padding-left: 30%;
+    width: 100%;
+    margin-bottom: 0;
+    font-size: 1rem;
+    color: #fff;
+    mix-blend-mode: soft-light;
+    background-color: red;
+}
+
+/* PECECITO */
+
+.image-container {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none; /* Para que la imagen no interfiera con otros elementos */
+    animation: floating 2.5s ease-in-out infinite;
+}
+
+.scroll-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 140px; /* Ajusta el tamaño según necesites */
+    height: auto;
+    transition: transform 0.1s linear; /* Transición suave */
+}
+
+/* BOTÓN PROYECTOS */
+
+.boton-ver-mas {
+    text-align: center; /* Centra el botón horizontalmente */
+    margin-top: 20px; /* Espacio entre proyectos y el botón */
+}
+
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+}
+
+.boton:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+}
+
+/* ANIMACIONES */
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }    
+}
