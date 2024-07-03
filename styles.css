@@ -86,7 +86,7 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     gap: 26px; /* Espacio entre proyectos */
-    max-width: 800px; /* Ancho máximo del contenedor */
+    max-width: 700px; /* Ancho máximo del contenedor */
     max-height: fit-content;
     margin: 0 auto;
 }
@@ -99,31 +99,52 @@ nav ul li a:hover {
     overflow: hidden; /* Para recortar la sombra en los bordes redondeados */
     height: 210px;
     backdrop-filter: blur(5px);
+    border: 1px, solid, #ffffff33;
 }
 
 .proyecto img {
-    width: 150px; /* Ancho de la imagen */
-    height: 150px; /* Altura de la imagen */
-    object-fit: cover; /* Ajustar imagen al contenedor */
+    object-fit: contain;
+}
+
+#mobile {
+    width: 250px; /* Ancho de la imagen */
+    height: 90%; /* Altura de la imagen */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#pc {
+    width: 220px; /* Ancho de la imagen */
+    height: 100%; /* Altura de la imagen */
+    margin-left: 0;
+    position: absolute;
+    left: 0;
     border-radius: 10px 0 0 10px; /* Bordes redondeados solo en la esquina izquierda */
 }
 
-.descripcion h3 {
-    padding-left: 30%;
+.descripcion {
+    margin: auto;
+    text-align: left;
+    max-width: 427px;
     width: 100%;
-    margin-top: 0;
+    padding-left: 200px;
+}
+
+.descripcion h3 {
+    padding-left: 22px;
+    margin-bottom: 0;
+    width: 100%;
     font-size: 1.2rem;
     color: #E2E2E2;
 }
 
 .descripcion p {
-    padding-left: 30%;
-    width: 100%;
-    margin-bottom: 0;
+    margin-top: 8px;
+    padding-left: 22px;
     font-size: 1rem;
-    color: #fff;
-    mix-blend-mode: soft-light;
-    background-color: red;
+    color: #99b9bf;
+    mix-blend-mode: overlay;
 }
 
 /* PECECITO */
@@ -159,15 +180,59 @@ nav ul li a:hover {
 .boton {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007bff; /* Color de fondo del botón */
+    background-color: #2f7299; /* Color de fondo del botón */
     color: #fff; /* Color del texto */
     text-decoration: none; /* Quita el subrayado del enlace */
     border-radius: 5px; /* Bordes redondeados */
     transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+    margin-bottom: 100px;
 }
 
 .boton:hover {
-    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+    background-color: #2f485b; /* Color de fondo al pasar el mouse */
+}
+
+/* SKILLS */
+
+.skills {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+.skill {
+    flex: 1;
+    padding: 20px;
+}
+
+.skill h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #E2E2E2;
+}
+
+.skill ul {
+    list-style-type: none;
+    padding: 0;
+    column-count: 2; /* Número de columnas */
+    column-gap: 0px;
+}
+
+.skill li {
+    margin: 5px 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #E2E2E2;
+    border: 1.5px, solid, #E2E2E2;
+    border-radius: 25px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
 }
 
 /* ANIMACIONES */
