@@ -172,7 +172,7 @@ a:hover {
 
 .image-container {
     position: fixed;
-    z-index: -1;
+    z-index: 0;
     top: 0;
     left: 0;
     width: 100%;
@@ -201,7 +201,7 @@ a:hover {
 .boton {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #2f7299; /* Color de fondo del botón */
+    background-color: #23404D; /* Color de fondo del botón */
     color: #fff; /* Color del texto */
     text-decoration: none; /* Quita el subrayado del enlace */
     border-radius: 5px; /* Bordes redondeados */
@@ -226,8 +226,13 @@ a:hover {
 
 .skill {
     flex: 1;
-    padding: 20px;
+    padding: 40px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%
 }
 
 .skill ul {
@@ -246,7 +251,7 @@ a:hover {
     color: #E2E2E2;
     border: 1.5px, solid, #E2E2E2;
     border-radius: 25px;
-    display: inline-block;
+    display: inline-flex;
     white-space: nowrap;
     overflow: hidden;
     backdrop-filter: blur(5px);
@@ -267,18 +272,103 @@ a:hover {
     flex: 1;
     padding: 20px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.workstudy h2 {
+    backdrop-filter: blur(4px);
+}
+
+.workstudy ul {
+    list-style-type: none;
+    backdrop-filter: blur(7px);
 }
 
 .workstudy li h2 {
     font-size: 1.12em;
     margin-bottom: 4px;
+    margin-top: 4px;
+}
+
+.workstudy h3 {
+    margin-bottom: 0;
 }
 
 .workstudy p {
-    color: #E2E2E2;
-    mix-blend-mode: soft-light;
+    color: #6A868B;
     margin-top: 0;
 }
+
+/* ABOUT ME */
+
+.about-me h2{
+    padding: 28px 20px;
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.rectangle-about-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-card {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.087);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    border: 1px, solid, #ffffff33;
+    max-width: 700px; /* Ancho máximo del contenedor */
+    max-height: fit-content;
+    z-index: 2;
+    position: relative;
+}
+
+.about-image img {
+    width: 80%;
+    height: auto;
+    margin: 45px;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-text {
+    flex: 2;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.about-text p {
+    margin: 0;
+}
+
+footer {
+    position: relative;
+    z-index: -1;
+    margin-top: -230px; /* Ajusta este valor según sea necesario */
+    mix-blend-mode: luminosity;
+    opacity: 70%;
+}
+
+footer img {
+    width: 100%;
+    height: auto;
+}
+
 
 /* ANIMACIONES */
 
